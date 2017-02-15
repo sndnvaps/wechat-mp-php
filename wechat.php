@@ -3,7 +3,7 @@ require_once(__dir__ . '/vendor/dodgepudding/wechat-php-sdk/wechat.class.php');
 //wechat.php
 
 $options = array(
-        'token'=>'tokenaccesskey', //填写你设定的key
+        'token'=>'sndnvaps', //填写你设定的key
 	'encodingaeskey'=>'encodingaeskey' //填写加密用的EncodingAESKey，如接口为明文模式可忽略
 	'appid'=>'wxdk1234567890', //填写高级调用功能的app id
 	'appsecret'=>'xxxxxxxxxxxxxxxxxxx' //填写高级调用功能的密钥
