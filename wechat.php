@@ -1,12 +1,12 @@
 <?php
-require_once(__dir__ . '/vendor/dodgepudding/wechat-php-sdk/wechat.class.php');
+require_once(__dir__ . '/wechat-php-sdk/wechat.class.php');
 //wechat.php
 
 $options = array(
-        'token'=>'sndnvaps', //填写你设定的key
-	'encodingaeskey'=>'encodingaeskey' //填写加密用的EncodingAESKey，如接口为明文模式可忽略
-	'appid'=>'wxdk1234567890', //填写高级调用功能的app id
-	'appsecret'=>'xxxxxxxxxxxxxxxxxxx' //填写高级调用功能的密钥
+	'token'=>'sndnvaps', //填写你设定的key
+	//'encodingaeskey'=>'encodingaeskey' //填写加密用的EncodingAESKey，如接口为明文模式可忽略
+	'appid'=>'wxd82fa72a3fxxxxxxxxx', //填写高级调用功能的app id
+	'appsecret'=>'d4624c36b6795d1d99dcxxxxxxxxxxxxx' //填写高级调用功能的密钥
     );
 $weObj = new Wechat($options);
 $weObj->valid();//明文或兼容模式可以在接口验证通过后注释此句，但加密模式一定不能注释，否则会验证失败

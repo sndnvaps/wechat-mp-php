@@ -1,16 +1,4 @@
-# use composer to download dependency packages for "wechat.php"
-
-## install composer
-
-```bash
-	$curl -sS https://getcomposer.org/installer | php
-	$cp composer.phar /usr/local/bin/composer
-```
-## run composer to download dependency packages
-```bash
-composer install
-```
-
+# wechat base on wechat-php-sdk
 
 ## 修改公众号的相关参数
    修改[wechat.php](wechat.php),中如下的内容
