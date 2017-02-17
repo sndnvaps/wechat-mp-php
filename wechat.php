@@ -1,5 +1,6 @@
 <?php
 require_once(__dir__ . '/wechat-php-sdk/wechat.class.php');
+include(__dir__ . '/Event_handler.php');
 //wechat.php
 
 $options = array(
@@ -17,6 +18,7 @@ switch($type) {
             exit;
             break;
     case Wechat::MSGTYPE_EVENT:
+	    Event_handler($weObj);
             break;
     case Wechat::MSGTYPE_IMAGE:
             break;
